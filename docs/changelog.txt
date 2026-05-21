@@ -1,0 +1,34 @@
+<h5>1.1.0 RC 1   [2026-05-18]</h5>  Dev: XOOPS 2.7.0, PHP 8.2, PHP 8.5
+<hr>
+<strong>Added</strong>
+- Added `docs/GITHUB-WIKI.md` with an automated GitHub Wiki publishing workflow.
+- Added `docs/USAGE.md` as a helper reference for consumer modules.
+
+<strong>Deprecated</strong>
+- Nothing
+
+<strong>Fixed</strong>
+- Fixed `Utility::get_bootstrap()` so a missing `mtools_setup` row no longer triggers "Cannot use bool as array" warnings.
+- Fixed `MTOOLS_PATH` and `MTOOLS_URL` constant redefinition warnings when `bootstrap.php` and `include/common.php` are both loaded.
+- Hardened `FileChecker` and `DirectoryChecker` path containment checks and removed `0777` from accepted permission modes.
+- Made `ModuleFeedback` require a real consumer module context instead of silently falling back to `mtools`.
+
+<strong>Removed</strong>
+- Nothing
+
+<strong>Security</strong>
+- Nothing
+
+<h5>1.01 Beta 1   [WORK IN PROGRESS - NOT RELEASED]</h5>  Dev: XOOPS 2.5.11, PHP 7.4.15, PHP 8.0.2
+<hr>
+- fixed Utility::get_bootstrap() missing setup-row handling to avoid "Cannot use bool as array" warnings
+- fixed MTOOLS_PATH and MTOOLS_URL constant redefinition warnings when bootstrap.php and include/common.php are both loaded
+- hardened FileChecker and DirectoryChecker path containment checks and permission defaults
+- added mTools usage and GitHub Wiki publishing documentation
+- added TestdataButtons class (mamba)
+- added TestdataSample class (mamba)
+- added Blocksadmin class (mamba)
+
+<h5>1.0 Beta 1      [2020/09/05]</h5>
+<hr>
+ - Beta 1 release (mamba)

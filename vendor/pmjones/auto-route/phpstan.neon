@@ -1,0 +1,9 @@
+parameters:
+    level: max
+    checkGenericClassInNonGenericObjectType: false
+    paths:
+        - src
+    ignoreErrors:
+        - "#no value type specified in iterable type#"
+        - "#Cannot call method getName\\(\\) on ReflectionClass\\|null#"
+        - "#Call to an undefined method ReflectionType::getName\\(\\)#"

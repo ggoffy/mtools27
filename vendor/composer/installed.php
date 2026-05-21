@@ -1,0 +1,41 @@
+<?php return [
+    'root'     => [
+        'pretty_version' => 'dev-master',
+        'version'        => 'dev-master',
+        'type'           => 'library',
+        'install_path'   => __DIR__ . '/../../',
+        'aliases'        => [],
+        'reference'      => '03c158eb7fcd869f256bfbe47c2d282f26fea19f',
+        'name'           => '__root__',
+        'dev'            => true,
+    ],
+    'versions' => [
+        '__root__'           => [
+            'pretty_version'  => 'dev-master',
+            'version'         => 'dev-master',
+            'type'            => 'library',
+            'install_path'    => __DIR__ . '/../../',
+            'aliases'         => [],
+            'reference'       => '03c158eb7fcd869f256bfbe47c2d282f26fea19f',
+            'dev_requirement' => false,
+        ],
+        'pmjones/auto-route' => [
+            'pretty_version'  => '2.0.0',
+            'version'         => '2.0.0.0',
+            'type'            => 'library',
+            'install_path'    => __DIR__ . '/../pmjones/auto-route',
+            'aliases'         => [],
+            'reference'       => '8f5afdd1d07a8f614c590da0baa10581a8b50733',
+            'dev_requirement' => false,
+        ],
+        'psr/log'            => [
+            'pretty_version'  => '3.0.0',
+            'version'         => '3.0.0.0',
+            'type'            => 'library',
+            'install_path'    => __DIR__ . '/../psr/log',
+            'aliases'         => [],
+            'reference'       => 'fe5ea303b0887d5caefd3d431c3e61ad47037001',
+            'dev_requirement' => false,
+        ],
+    ],
+];

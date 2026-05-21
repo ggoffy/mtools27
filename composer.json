@@ -1,0 +1,32 @@
+{
+    "name": "xoopsmodules25x/mtools",
+    "type": "xoops-module",
+    "description": "Shared helper classes for XOOPS modules; incubation layer before XMF promotion.",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=8.2 <8.6"
+    },
+    "require-dev": {
+        "pmjones/auto-route": "^2.0",
+        "phpunit/phpunit": "^11.0",
+        "phpstan/phpstan": "^1.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "XoopsModules\\Mtools\\": "class/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "XoopsModules\\Mtools\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "analyse": "phpstan analyse",
+        "unit": "phpunit",
+        "test": [
+            "@analyse",
+            "@unit"
+        ]
+    }
+}
